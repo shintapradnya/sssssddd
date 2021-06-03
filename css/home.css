@@ -1,0 +1,358 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-style: 15px;
+	background-color: #f4f4f4;
+}
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+/* css untuk mengatur header */
+header{
+    height: 100px;
+    background: #429B42;
+    color: #fff;
+	padding-top: 40px;
+	min-height: 40px;
+	border-bottom: 5px solid #bfbac2;
+}
+
+header #branding{
+	float: left;
+}
+
+header #branding h1{
+	margin: 0;
+
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+	margin-top: 5px;
+}
+/* css untuk mengatur dropdown */
+.li.dropdown {
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+.dropdown:hover .isi-dropdown {
+	display: block;
+}
+
+.isi-dropdown a:hover {
+	color: #EADFCE;
+}
+
+.isi-dropdown {
+	position: absolute;
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	background-color: #EADFCE;
+	padding-bottom: 10px;
+}
+
+.isi-dropdown a {
+	color: #3c3c3c;
+}
+
+.isi-dropdown a:hover {
+	color: #232323;
+}
+header a{
+	color: #0a0a0a;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+header #branding, header .active a{
+	color: #fff;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #79767a;
+	font-weight: bold;
+}
+/* CSS untuk mengatur landing page */
+.landing-page{
+	width: 100%;
+	height: 100vh;
+	background: #EADFCE;
+	position: relative;
+	overflow: hidden;
+  }
+  .landing-page::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	opacity: .3;
+  }
+  
+  .page-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+	padding: 0 40px;
+	box-sizing: border-box;
+  }
+  .page-content h1{
+	color: #19504C;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 900;
+	margin-bottom: 20px;
+  }
+  .page-content p{
+	color: rgb(10, 10, 1);
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-family: Verdana;
+  }
+  /* css untuk mengatur link a pada 
+  landing page */
+  .page-content a{
+	display: inline;
+	text-decoration: none;
+	color: #5eb96e;
+	border: 2px solid #28f06b;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	transition: 0.4s linear;
+  }
+  .page-content a:hover{
+	color: #fff;
+	background: #49bd5d;
+  }
+  #boxes .container a{
+	display: inline;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #137946;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: 0.4s linear;
+  }
+
+  #boxes .container a:hover{
+	color: #000;
+    background: #137946;
+  }
+/*untuk mengatur tulisan pada 
+deskripsi */
+.deskripsi_home{
+    word-spacing: 10px;
+    line-height: 1.8;
+}
+/*untuk mengatur box img */
+#boxes{
+
+	background-color: #EADFCE;
+	padding-top: 50px;
+}
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 15px;
+	word-spacing: 8px;
+    line-height: 1.5;
+}
+#boxes .box img{
+	width: 360px;
+}
+
+#boxes .box-pelayanan{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 15px;
+	word-spacing: 8px;
+    line-height: 1.5;
+}
+
+.about-section{
+    background:  url(../foto/tanaman.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #EADFCE;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 40%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 15px;
+    color: #3b3b3b;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.about-section .inner-container a{
+	display: inline;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #137946;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: 0.4s linear;
+  }
+
+.about-section .inner-container a:hover{
+	color: #000;
+    background: #137946;
+  }
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+/* CSS untuk mengatur lokasi */
+.lokasi{
+	text-align: center;
+	background-color: #EADFCE;
+	padding: 20px 40px 40px;
+	font-family:'Lucida Sans';
+}
+.lokasi .maps{
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.lokasi .view{
+	display: inline;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #137946;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: 0.4s linear;
+}
+.lokasi .view a:hover{
+	color: #000;
+    background: #137946;
+}
+/* css bagian footer */
+footer{
+	padding: 20px;
+	color: #fff;
+	background: linear-gradient(to right,#79767a,#bfbac2 );
+
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+   }
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+   }
+   .footer-col{
+	width: 25%;
+	padding: 0 15px;
+  }
+  .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+/*responsive*/
+@media(max-width: 768px){
+	header #branding,
+	header nav,
+	header nav li,
+	#boxes .box
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	header{
+		padding-bottom: 20px;
+	}
+
+	#showcase h1{
+		margin-top: 40px;
+	}
+}

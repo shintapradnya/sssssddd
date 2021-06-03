@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GreenCube</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../css/kontak_kami.css">
+	</head>
+<body>
+<header>
+	<div class="container">
+		<div id="branding">
+			<h1> <i class="fas fa-seedling"></i> GreenCube</h1>  
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="../test.html">Home</a></li>
+				<li><a href="produk.html">Produk</a></li>
+				<li class="dropdown"><a href="#">Tentang Kami</a>
+					<ul class="isi-dropdown">
+						<li><a href="visi&misi.html">Visi Misi</a></li><br><hr>
+						<li><a href="sejarah.html">Sejarah</a></li><hr>
+					</ul>
+				</li>
+				<li><a href="kelebihan-kekurangan.html">Kelebihan & Kekurangan</a></li>
+				<li><a href="kontak_kami.html">Kontak Kami</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<section>
+    <div>
+        <h2 id="kontak">Kontak Kami</h2>
+        <div class="underline-kontak"></div>
+        <p class="paragraf_satu">Anda dapat memberi masukan berdasarkan form yang tersedia. 
+            Silahkan isi dengan sebenar-benarnya agar dapat menjadi tolak ukur dalam pengembangan produk kami.</p>
+            <div id="card">
+                <div id="card-content">
+                    <div id="card-title">
+                      <h2>Form</h2>
+                      <div class="underline-title"></div>
+                      <form class="form">
+                        <label for="username" style="padding-top:13px">&nbsp;Nama Lengkap</label>
+                            <input id="username" class="form-content" type="text" name="username" autocomplete="on" required />
+                        <div class="form-border"></div>
+                        <label for="user-email" style="padding-top:13px">&nbsp;Email</label>
+                            <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+                            <div class="form-border"></div>
+                        <label for="pesan" style="padding-top:13px">&nbsp;Pesan Anda</label>
+                        <textarea name="pesan" cols="40" rows="5">
+                            Silahkan Masukkan Isi Pesan Anda
+                          </textarea>
+                          <div class="form-border"></div>
+                        <label for="saran" style="padding-top:13px">&nbsp;Saran Anda</label>
+                        <textarea name="saran" cols="40" rows="5">
+                            Silahkan Masukkan Saran Anda
+                          </textarea>
+                            <div class="form-border"></div>
+						
+							<script>
+								function cekNama(form) {
+									if (form.elements[0].value == "") {
+									alert("Silahkan isi data terlebih dahulu");
+										form.nama.focus();
+										form.nama.select();
+									return(false);
+									}
+									alert("Terima kasih, " + form.elements[0].value + " Atas sarannya data akan kami proses"); 
+									return(true);
+									}
+							</script>	
+
+                        <input id="submit-btn" type="submit" name="submit" value="Kirim" onClick = " cekNama (this.form)">
+                    </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>Company</h4>
+				<ul>
+					<p><a href="visi&misi.html">Tentang Kami</a></p>
+					<p><a href="produk.html">Produk Kami</a></p>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Find Me</h4>
+				<ul>
+					<p><i class="fas fa-map-marker-alt"></i> Jalan Raya Sesetan Gang Seroja No.2 Sesetan</p>
+					<p><i class="fas fa-phone-alt"></i> 082144732525</p>
+					<p><i class="far fa-envelope"></i> shintapradnyaa@gmail.com</p>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Follow us</h4>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GreenCube</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../css/order.css">
+	</head>
+<body>
+<header>
+	<div class="container">
+		<div id="branding">
+			<h1> <i class="fas fa-seedling"></i> GreenCube</h1>  
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="../test.html">Home</a></li>
+				<li><a href="produk.html">Produk</a></li>
+				<li class="dropdown"><a href="#">Tentang Kami</a>
+					<ul class="isi-dropdown">
+						<li><a href="visi&misi.html">Visi Misi</a></li><br><hr>
+						<li><a href="sejarah.html">Sejarah</a></li><hr>
+					</ul>
+				</li>
+				<li><a href="kelebihan-kekurangan.html">Kelebihan & Kekurangan</a></li>
+				<li><a href="kontak_kami.html">Kontak Kami</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section>
+	<div>
+        <h2 id="des_pesan">Silahkan isi form untuk memesan</h2>
+        <div class="underline-pesan"></div>
+        <p class="paragraf_satu">Anda dapat memberi masukan berdasarkan form yang tersedia. 
+            Silahkan isi dengan sebenar-benarnya agar dapat menjadi tolak ukur dalam pengembangan produk kami.</p>
+            <div id="card">
+                <div id="card-content">
+                    <div id="card-title">
+                      <h2>Form Pemesanan Tanaman</h2>
+                      <div class="underline-title"></div>
+                      <form class="form">
+                        <label for="username" style="padding-top:13px">Nama Lengkap</label>
+                            <input id="username" class="form-content" type="text" name="username" autocomplete="on" required />
+                        <div class="form-border"></div>
+                        <label for="user-email" style="padding-top:13px">Email</label>
+                            <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+                            <div class="form-border"></div>
+						<label for="alamat" style="padding-top:13px">Alamat</label>
+                            <input id="alamat" class="form-content" type="text" name="alamat" autocomplete="on" required />
+                        	<div class="form-border"></div>
+						<label for="kota" style="padding-top:13px">Kota</label>
+							<input id="kota" class="form-content" type="text" name="kota" autocomplete="on" required />
+							<div class="form-border"></div>
+						<label for="provinsi" style="padding-top:13px">Provinsi</label>
+							<input id="provinsi" class="form-content" type="text" name="provinsi" autocomplete="on" required />
+							<div class="form-border"></div>
+						<label for="kode_pos" style="padding-top:13px">Kode Post</label>
+							<input id="kode_pos" class="form-content" type="text" name="kode_pos" autocomplete="on" required />
+							<div class="form-border"></div>
+						<label for="telepon" style="padding-top:13px">Telepon</label>
+							<input id="telepon" class="form-content" type="text" name="telepon" autocomplete="on" required />
+							<div class="form-border"></div>
+						<label for="nama_produk" style="padding-top:13px">Nama Produk</label>
+							<input id="nama_produk" class="form-content" type="text" name="nama_produk" autocomplete="on" required />
+							<div class="form-border"></div>
+						<label for="jumlah" style="padding-top:13px">Jumlah</label>
+							<input id="jumlah" class="form-content" type="text" name="jumlah" autocomplete="on" required />
+							<div class="form-border"></div>
+						
+							<script>
+								function cekNama(form) {
+									if (form.elements[0].value == "") {
+										alert("Silahkan isi data terlebih dahulu");
+											form.nama.focus();
+											form.nama.select();
+									return(false);
+									}
+										alert("Terima kasih, " + form.elements[0].value + " Data akan diproses, Silahkan isi data pembayaran"); 
+									return(true);
+								}
+							</script>			
+                       <input id="submit-btn" type="submit" name="submit" value="Kirim"  onClick = " cekNama (this.form)">
+                    </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>Company</h4>
+				<ul>
+					<p><a href="visi&misi.html">Tentang Kami</a></p>
+					<p><a href="produk.html">Produk Kami</a></p>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Find Me</h4>
+				<ul>
+					<p><i class="fas fa-map-marker-alt"></i> Jalan Raya Sesetan Gang Seroja No.2 Sesetan</p>
+					<p><i class="fas fa-phone-alt"></i> 082144732525</p>
+					<p><i class="far fa-envelope"></i> shintapradnyaa@gmail.com</p>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Follow us</h4>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
